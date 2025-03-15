@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/header"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Sort by Category"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvSelectorParent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/s">
+
+            <AutoCompleteTextView
+                android:id="@+id/tvSelector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Transaction Type"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--   Expenses Radio Group   -->
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+            android:id="@+id/categoryGroupExpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:flexWrap="wrap"
+            app:justifyContent="space_between"
+            app:toggle_requiredAmount="1"
+            app:toggle_selectAnimation="circular_reveal"
+            app:toggle_selectableAmount="1">
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnFood"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/pink"
+                app:toggle_text="Food"
+                app:toggle_textColor="@color/black" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnTransportation"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="15dp"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/orange"
+                app:toggle_text="Transport"
+                app:toggle_textColor="@color/black" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="15dp"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/purple"
+                app:toggle_text="Shopping"
+                app:toggle_textColor="@color/black" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="15dp"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/skyblue"
+                app:toggle_text="Health"
+                app:toggle_textColor="@color/black" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnEntertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="15dp"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/green"
+                app:toggle_text="Entertainment"
+                app:toggle_textColor="@color/black" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="15dp"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/others"
+                app:toggle_text="Others"
+                app:toggle_textColor="@color/black" />
+
+        </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+        <!--   Income Radio Group   -->
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+            android:id="@+id/categoryGroupIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/s"
+            android:visibility="gone"
+            app:flexWrap="wrap"
+            app:justifyContent="space_between"
+            app:toggle_requiredAmount="1"
+            app:toggle_selectAnimation="circular_reveal"
+            app:toggle_selectableAmount="1">
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnLottery"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/pink"
+                app:toggle_text="Lottery"
+                app:toggle_textColor="@color/black" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="15dp"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/orange"
+                app:toggle_text="Salary"
+                app:toggle_textColor="@color/black" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnInvestment"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="15dp"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/purple"
+                app:toggle_text="Investment"
+                app:toggle_textColor="@color/black" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnBonus"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="15dp"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/skyblue"
+                app:toggle_text="Bonus"
+                app:toggle_textColor="@color/black" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnGift"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="15dp"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/green"
+                app:toggle_text="Gift"
+                app:toggle_textColor="@color/black" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnPocketMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="15dp"
+                app:toggle_backgroundColor="@color/grey"
+                app:toggle_selectedBackgroundColor="@color/others"
+                app:toggle_text="Pocket Money"
+                app:toggle_textColor="@color/black" />
+
+        </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+        <!-- Sort By Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Sort by Order"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Sort By Options -->
+        <RadioGroup
+            android:id="@+id/sortRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbAscending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ascending"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbDescending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Descending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/black"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                app:cornerRadius="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/darkYellow"
+                android:text="Save"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

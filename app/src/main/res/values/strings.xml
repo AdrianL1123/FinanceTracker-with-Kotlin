@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FinanceTracker</string>
+    <string name="money_tracker">Money Tracker</string>
+    <string name="category">Category</string>
+    <string name="transaction">Transaction</string>
+    <string name="category_icon">Category Icon</string>
+    <string name="are_you_sure">Are you sure ?</string>
+    <string name="this_action_is_not_reversible">This action is not reversible</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="details">Details</string>
+    <string name="example">example</string>
+    <string name="type">Type</string>
+    <string name="expense">Expense</string>
+    <string name="amount">Amount</string>
+    <string name="_10">10</string>
+    <string name="date">Date</string>
+    <string name="jan18_2025">Jan18, 2025</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="total_spent_for_each_day">Total spent for each day</string>
+    <string name="all_time_expenses">All Time Expenses</string>
+
+    <!--  selector  -->
+    <string-array name="txType">
+        <item>Expenses</item>
+        <item>Income</item>
+    </string-array>
+</resources>

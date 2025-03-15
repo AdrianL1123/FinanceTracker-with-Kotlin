@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/xxl"
+    app:cardBackgroundColor="@color/header"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnMinus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/tvCurrentYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Current Year"
+                android:text="2025"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btnPlus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:clickable="true"
+                android:contentDescription="Increase Year"
+                android:focusable="true"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+            android:id="@+id/monthGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:flexWrap="wrap"
+            app:justifyContent="space_between"
+            app:toggle_requiredAmount="1"
+            app:toggle_selectAnimation="circular_reveal"
+            app:toggle_selectableAmount="1">
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnJan"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/pink"
+                app:toggle_text="JAN"
+                app:toggle_textColor="@color/white" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnFeb"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/orange"
+                app:toggle_text="FEB"
+                app:toggle_textColor="@color/white" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnMar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/purple"
+                app:toggle_text="MAR"
+                app:toggle_textColor="@color/white" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnApr"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/skyblue"
+                app:toggle_text="APR"
+                app:toggle_textColor="@color/white" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnMay"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/green"
+                app:toggle_text="MAY"
+                app:toggle_textColor="@color/white" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnJun"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/red"
+                app:toggle_text="JUN"
+                app:toggle_textColor="@color/white" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnJul"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/darkBlue"
+                app:toggle_text="JUL"
+                app:toggle_textColor="@color/white" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnAug"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/yellow"
+                app:toggle_text="AUG"
+                app:toggle_textColor="@color/white" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnSep"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/teal_200"
+                app:toggle_text="SEP"
+                app:toggle_textColor="@color/white" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnOct"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/olive"
+                app:toggle_text="OCT"
+                app:toggle_textColor="@color/white" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnNov"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/grey"
+                app:toggle_text="NOV"
+                app:toggle_textColor="@color/white" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnDec"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xxxxxl"
+                android:layout_margin="@dimen/m"
+                app:toggle_backgroundColor="@color/header"
+                app:toggle_selectedBackgroundColor="@color/teal_700"
+                app:toggle_text="DEC"
+                app:toggle_textColor="@color/white" />
+
+        </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/black"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                app:cornerRadius="5dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnConfirm"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/darkYellow"
+                android:text="Confirm"
+                android:textColor="@color/black"
+                app:cornerRadius="5dp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShowAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Show All"
+            android:textColor="@color/darkYellow" />
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
